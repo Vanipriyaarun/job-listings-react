@@ -1,69 +1,71 @@
-*{
+* {
   list-style-type: none;
 }
-body{
+body {
   background-color: hsl(180, 52%, 96%);
 }
-.main-grid{
+.main-grid {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   border-left: solid 6px hsl(180, 66%, 37%);
   margin: 20px 80px;
   box-shadow: 5px 10px 10px hsl(180, 25%, 80%);
   background-color: white;
+  border-radius: 5px;
 }
-.main-flex{
+.main-flex {
   display: flex;
 }
-.main-flex img{
+.main-flex img {
   margin: 20px 0 20px 40px;
 }
-.title-list{
- display: flex;
+.title-list {
+  display: flex;
 }
-.title-list li{
+.title-list li {
   padding: 3px 8px 0 8px;
   margin-right: 10px;
 }
-.company{
-  color:hsl(180, 66%, 37%);
+.company {
+  color: hsl(180, 66%, 37%);
   font-size: 1.2rem;
   font-weight: 700;
-} 
-.new ,.featured{
+}
+.new,
+.featured {
   font-size: 0.8rem;
   border: none;
   border-radius: 15px;
   font-weight: 600;
 }
-.new{
-background-color:hsl(180, 66%, 37%);
-color: white;
+.new {
+  background-color: hsl(180, 66%, 37%);
+  color: white;
 }
-.featured{
+.featured {
   background-color: black;
   color: white;
 }
-.title h3{
+.title h3 {
   margin-left: 50px;
 }
-.title h3:hover{
+.title h3:hover {
   color: hsl(180, 66%, 37%);
 }
-.post-time{
+.post-time {
   display: flex;
 }
-.post-time li{
- margin-right: 10px;
- padding: 0 10px;
- color:gray;
- font-weight: 500;
+.post-time li {
+  margin-right: 10px;
+  padding: 0 10px;
+  color: gray;
+  font-weight: 500;
 }
-.skill-list{
+.skill-list {
   display: flex;
   justify-content: space-evenly;
 }
-.skill-list li{
+.skill-list li {
   background-color: hsl(180, 31%, 95%);
   color: hsl(180, 66%, 37%);
   font-size: 1rem;
@@ -73,8 +75,51 @@ color: white;
   border-radius: 10px;
   margin-top: 30px;
 }
-.skill-list li:hover{
-background-color:hsl(180, 66%, 37%) ;
-color: white;
-cursor: pointer;
+.skill-list li:hover {
+  background-color: hsl(180, 66%, 37%);
+  color: white;
+  cursor: pointer;
+}
+
+.filter {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 80px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 5px 10px 10px hsl(180, 25%, 80%);
+}
+.filter-catagories {
+  display: inline-block;
+  color: hsl(180, 66%, 37%);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-right: 20px;
+  padding: 2px 0 2px 8px;
+  border-radius: 8px;
+  background-color: hsl(180, 31%, 95%);
+  box-shadow: 5px 10px 10px hsl(180, 25%, 80%);
+}
+.filter-catagories button {
+  background-color: hsl(180, 66%, 37%);
+  border: none;
+  margin-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
+  border-radius: 3px;
+}
+.filter-catagories button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+.filter span {
+  text-decoration: underline;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 15px;
+  margin-right: 50px;
+  color: hsl(180, 66%, 37%);
+  cursor: pointer;
 }
